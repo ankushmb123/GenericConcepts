@@ -8,36 +8,20 @@ namespace FindMaxUsingGenerics
 {
     public class MaxNumberCheck
     {
-        //check Foat Maximum int Number
-        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
-        //comapring First Number to Second Number > 0  and firstNumber to third Number >0  
+        public int Computemax(int firstnumber, int secondnumber, int thirdnumber)
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-                return firstValue;
-            //comapring Second Number to First Number  > 0  and SecondNumber to third Number >0  
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-                //return secondNumber
-                return secondValue;
+            if (firstnumber.CompareTo(secondnumber) > 0 && firstnumber.CompareTo(thirdnumber) > 0)
+            {
+                return firstnumber;
+            }
+            if (secondnumber.CompareTo(firstnumber) > 0 && secondnumber.CompareTo(thirdnumber) > 0)
+            {
+                return secondnumber;
+            }
             else
-                //return thirdNumber
-                return thirdValue;
-
+            {
+                return thirdnumber;
+            }
         }
-        //check Foat Maximum Float Number
-        public static double MaximumFloatNumber(double firstValue, double secondValue, double thirdValue)
-        {
-            //comapring First Number to Second Number > 0  and firstNumber to third Number >0  
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-                //return 
-                return firstValue;
-            //comapring Second Number to First Number  > 0  and SecondNumber to third Number >0  
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-                //return secondNumber
-                return secondValue;
-            else
-                //return thirdNumber
-                return thirdValue;
-        }
-
     }
 }
